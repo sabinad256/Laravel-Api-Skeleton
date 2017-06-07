@@ -178,7 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-        Irazasyed\JwtAuthGuard\JwtAuthGuardServiceProvider::class
+        Irazasyed\JwtAuthGuard\JwtAuthGuardServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
 
     ],
 
