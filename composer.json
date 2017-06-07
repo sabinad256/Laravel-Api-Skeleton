@@ -38,6 +38,9 @@
             "php artisan jwt:secret"
         ],
         "post-install-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.test', '.env');\"",
+            "php artisan key:generate",
+            "php artisan jwt:secret",
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
